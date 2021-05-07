@@ -1,3 +1,8 @@
+---
+layout: article
+title: Document - Writing Posts
+mathjax: true
+---
 # Blog Test
 - - - -
 GitHub blog 테스트입니다.
