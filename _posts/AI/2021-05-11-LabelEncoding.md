@@ -12,7 +12,6 @@ comments: true
 # 전처리의 기본 - Label Encoder
 
 - 문자(categorical) 데이터를 수치(numerical) 데이터로 변환
-
 - NaN 값이 포함되어있으면 정상 동작하지 않음
 
 ---
