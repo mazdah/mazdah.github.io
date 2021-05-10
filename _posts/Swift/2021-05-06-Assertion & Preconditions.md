@@ -2,7 +2,8 @@
 layout: article
 title: Swift - Assertion & Preconditions
 mathjax: true
-tags: Swift
+tags:
+- [Swift, Assertion, Preconditions]
 categories: Swift
 comments: true
 ---

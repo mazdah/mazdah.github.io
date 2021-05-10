@@ -2,7 +2,8 @@
 layout: article
 title: Swift - Swift에서의 throw 처리
 mathjax: true
-tags: Swift
+tags:
+- [Swift, throw, try, catch]
 categories: Swift
 comments: true
 ---
