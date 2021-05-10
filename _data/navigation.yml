@@ -23,6 +23,7 @@ header:
         fr-LU: *FR
         # @end locale config
       url: /spring.html
+      
 - titles:
         # @start locale config
         en: &EN       Spring
@@ -47,6 +48,7 @@ header:
         fr-LU: *FR
         # @end locale config
       url: /swift.html
+      
   - titles:
       # @start locale config
       en      : &EN       Archive
