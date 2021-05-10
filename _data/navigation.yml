@@ -14,7 +14,7 @@ header:
       zh-TW: *ZH_HANT
       zh-HK: *ZH_HANT
       ko: &KO       스프링
-      ko-KR: *KO    스프링
+      ko-KR: *KO
       fr: &FR       Archives
       fr-BE: *FR
       fr-CA: *FR
@@ -39,7 +39,7 @@ header:
       zh-TW: *ZH_HANT
       zh-HK: *ZH_HANT
       ko: &KO       인공지능
-      ko-KR: *KO    인공지능
+      ko-KR: *KO
       fr: &FR       Archives
       fr-BE: *FR
       fr-CA: *FR
@@ -64,7 +64,7 @@ header:
       zh-TW: *ZH_HANT
       zh-HK: *ZH_HANT
       ko: &KO       스위프트
-      ko-KR: *KO    스위프트
+      ko-KR: *KO
       fr: &FR       Archives
       fr-BE: *FR
       fr-CA: *FR
