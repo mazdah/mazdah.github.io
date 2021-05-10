@@ -72,7 +72,7 @@ header:
       fr-FR   : *FR
       fr-LU   : *FR
       # @end locale config
-    url: /archive.html
+    url: /swift.html
 
   - titles:
       # @start locale config
