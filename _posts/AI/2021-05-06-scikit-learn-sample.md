@@ -1,6 +1,6 @@
 ---
 layout: article
-title: AI/ML - Scikit-learn 개용
+title: AI/ML - Scikit-learn 개요
 mathjax: true
 tags: AI
 categories: AI
