@@ -2,7 +2,8 @@
 layout: article
 title: AI/ML(패스트 캠퍼스) - Scikit-learn 개요
 mathjax: true
-tags: AI
+tags:
+- [AI, ML, Scikit-learn]
 categories: AI
 comments: true
 ---
