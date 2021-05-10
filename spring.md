@@ -14,7 +14,7 @@ key: page-spring
 ---
 
 <div id="archives">
-{% for category in site.categories %}
+{% for category in site.categories.Spring %}
   <div class="archive-group">
     {% capture category_name %}{{ category | first }}{% endcapture %}
     <div id="#{{ category_name | slugize }}"></div>
