@@ -7,7 +7,7 @@ categories: AI
 comments: true
 ---
 
-# Scikit-learn
+Scikit-learn
 - 모델 생성 : 사용하고자 하는 모델 import 후 아래아 같이 코딩
   model = 모델명
 - 학습 : model.fit(x, y)
@@ -20,7 +20,8 @@ model = LinearRegression()
 model.fit(x, y)
 prediction = model.predict(x2)
 ```
-실습 :
+
+- 실습 :
 ``` python
 import numpy as np
 from sklearn.linear_model import LinearRegression
