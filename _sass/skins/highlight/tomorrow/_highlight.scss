@@ -8,6 +8,7 @@ pre.lineno {
 .highlight > pre {
   color: $highlight-foreground;
   background-color: $highlight-background !important;
+  font-size: 15px;
   .c   { color: $highlight-comment; } /* Comment */
   .err { color: $highlight-red; } /* Error */
   .k   { color: $highlight-purple; } /* Keyword */
