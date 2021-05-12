@@ -1,10 +1,10 @@
 ---
 layout: article
-title: AI/ML(패스트 캠퍼스) - One Hot Encoding
-excerpt: 카테고리형 데이터를 One Hot Encoding으로 만들기
+title: AI/ML(패스트 캠퍼스) - Iris dataset 다루기
+excerpt: Iris dataset 불러오기, 데이터프레임 만들기, 간단한 시각화
 mathjax: true
 tags:
-  - [AI, ML, Scikit-learn, One Hot Encoding]
+  - [AI, ML, Scikit-learn, Iris, load_iris]
 categories: AI
 comments: true
 header:
