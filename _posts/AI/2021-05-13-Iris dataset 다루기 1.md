@@ -156,7 +156,7 @@ plt.title('Sepal', fontsize=15)
 plt.show()
 ```
 
-![Image](images/iris1.png)
+![Image](https://raw.githubusercontent.com/mazdah/mazdah.github.io/master/_posts/AI/images/iris1.png)
 
 ``` python
 sns.scatterplot('petal width (cm)', 'petal length (cm)', hue='target', palette='muted', data=df_iris)
@@ -164,7 +164,7 @@ plt.title('Sepal', fontsize=15)
 plt.show()
 ```
 
-![Image](images/iris2.png)
+![Image](https://raw.githubusercontent.com/mazdah/mazdah.github.io/master/_posts/AI/images/iris2.png)
 
 ``` python
 from mpl_toolkits.mplot3d import Axes3D
@@ -187,4 +187,4 @@ ax.w_zaxis.set_ticklabels([])
 plt.show()
 ```
 
-![Image](images/iris3.png)
+![Image](https://raw.githubusercontent.com/mazdah/mazdah.github.io/master/_posts/AI/images/iris3.png)
