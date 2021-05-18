@@ -42,7 +42,7 @@ article_header:
 var someInts = [Int]()
 someInts.append(3)
 someInts = []
-// someInts는 여전히 Int tYpe의 값들을 갖는 배열이다.
+// someInts는 여전히 Int type의 값들을 갖는 배열이다.
 ```
 
 
@@ -53,7 +53,7 @@ var threeDoubles = Array(repeating: 0.0, count: 3)
 // threeDoubles는 Double 타입의 요소를 갖는 배열이며 0.0이라는 값이 3개 들어있도록 초기화된다.
 ```
 
-- + 기호를 이용하여 2개의 다른 배열로 부터  새로운 배열을 만들 수 있다. 이때 새로 만들어지는 배열의 값 type은 합쳐진 2개의 배열의 값 type을 따른다.
+-  `+`  기호를 이용하여 2개의 다른 배열로 부터  새로운 배열을 만들 수 있다. 이때 새로 만들어지는 배열의 값 type은 합쳐진 2개의 배열의 값 type을 따른다.
 
 ``` swift
 var anotherThreeDoubles = Array(repeating: 2.5, count: 3)
