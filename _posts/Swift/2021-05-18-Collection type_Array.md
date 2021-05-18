@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Swift - Collection type \: Array
+title: Swift - Collection type (Array)
 excerpt: Collection type의 개요와 Array에 대하여
 mathjax: true
 tags:
