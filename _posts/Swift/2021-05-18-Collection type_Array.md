@@ -1,7 +1,7 @@
 ---
 layout: article
-title: Swift - Collection type : Array
-excerpt: String과 Character와 Substring 그리고 문자열 비교
+title: Swift - Collection type \: Array
+excerpt: Collection type의 개요와 Array에 대하여
 mathjax: true
 tags:
   - [Swift, Collection, Array]
