@@ -1,7 +1,7 @@
 ---
 layout: article
-title: Swift - Collection type (Array)
-excerpt: Collection type의 개요와 Array에 대하여
+title: Swift - Collection type (Set과 Dictionary)
+excerpt: Collection type의 Set과 Dictionary에 대하여
 mathjax: true
 tags:
  - [Swift, Collection, Set, Dictionary]
