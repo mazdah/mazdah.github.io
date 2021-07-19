@@ -1,10 +1,10 @@
 ---
 layout: article
 title: AI/ML(패스트 캠퍼스) - Hyperparameter 튜닝
-excerpt: Hyperparameter 튜닝 - RandomizedSearchCV
+excerpt: Hyperparameter 튜닝 - RandomizedSearchCV와 GridSearchCV
 mathjax: true
 tags:
-  - [AI, ML, Scikit-learn, Regression, Ensemble, 앙상블, Cross Validation, 교차검증, Hyperparameter, RandomizedSearchCV]
+  - [AI, ML, Scikit-learn, Regression, Ensemble, 앙상블, Cross Validation, 교차검증, Hyperparameter, RandomizedSearchCV, GridSearchCV]
 categories: AI
 comments: true
 header:
@@ -90,4 +90,48 @@ lgbm = LGBMRegressor(random_state=42, learning_rate=0.1, n_estimators=500, colsa
 lgbm.fit(x_train, y_train)
 lgbm_pred = lgbm.predict(x_test)
 
+```
+
+---
+
+### GridSearchCV
+- 모든 매개 변수 값에 대하여 완전 탐색을 시도함
+- 따라서, 대상 파라미터가 많다면 시간이 매우 오래 걸림
+
+---
+
+
+``` python
+params= {
+    'n_estimators' : [500, 1000],
+    'learning_rate' : [0.1, 0.05, 0.01],
+    'max_depth' : [7, 8],
+    'colsample_bytree' : [0.8, 0.9],
+    'subsample' : [0.8, 0.9]
+}
+
+from sklearn.model_selection import GridSearchCV
+
+grid_search = GridSearchCV(LGBMRegressor(), params, cv=3, n_jobs=-1, scoring='neg_mean_squared_error')
+grid_search.fit(x_train, y_train)
+
+grid_search.best_score_
+'''
+출력
+-13.6851764785058
+'''
+
+grid_search.best_params_
+'''
+출력
+{'colsample_bytree': 0.9,
+ 'learning_rate': 0.01,
+ 'max_depth': 7,
+ 'n_estimators': 1000,
+ 'subsample': 0.8}
+'''
+
+lgbm = LGBMRegressor(random_state=42, learning_rate=0.01, n_estimators=1000, colsample_bytree=0.9, subsample=0.8, max_depth=7)
+lgbm.fit(x_train, y_train)
+lgbm_pred = lgbm.predict(x_test)
 ```
