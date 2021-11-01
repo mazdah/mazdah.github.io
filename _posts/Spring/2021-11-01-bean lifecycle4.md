@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "Spring - bean Life Cycle - 4"
-excerpt: "bean 생성 시점에 통지 받기 - \@PostConstruct  애노테이션 사용"
+excerpt: "bean 생성 시점에 통지 받기 - PostConstruct  애노테이션 사용"
 mathjax: true
 tags:
 - [Spring, IoC, DI, Application Context, bean, life cycle, annotation, @PostConstruct]
