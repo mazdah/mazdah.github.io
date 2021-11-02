@@ -1,7 +1,7 @@
 ---
 layout: article
 title: "Spring - bean Life Cycle - 5"
-excerpt: "bean 생성 시점에 통지 받기 - @Bean 애노테이션의 initMethod 속성 사용"
+excerpt: "bean 생성 시점에 통지 받기 - @Bean 애노테이션의 initMethod 속성 사용 및 초기화 메서드 실행 순서"
 mathjax: true
 tags:
 - [Spring, IoC, DI, Application Context, bean, life cycle, annotation, Bean, initMethod]
