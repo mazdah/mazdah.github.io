@@ -75,7 +75,7 @@ public class DestructiveBean {
 
 	public static void main(String... args) throws Exception {
 		GenericXmlApplicationContext ctx = new GenericXmlApplicationContext();
-		ctx.read("classpath:spring/app-context-xml.xml");
+		ctx.road("classpath:spring/app-context-xml.xml");
 		ctx.refresh();
 
 		DestructiveBean bean = (DestructiveBean) ctx.getBean("destructiveBean");
