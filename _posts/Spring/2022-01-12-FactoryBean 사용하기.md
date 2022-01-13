@@ -1,7 +1,7 @@
 ---
 layout: article
-title: "Bean이 Spring 알게 하기 - 2"
-excerpt: "FactoryBean 사용"
+title: "FactoryBean 사용하기"
+excerpt: "의존성 주입이 어려운 객체 사용하기"
 mathjax: true
 tags:
 - [Spring, IoC, DI, Application Context, Bean, FactoryBean]
