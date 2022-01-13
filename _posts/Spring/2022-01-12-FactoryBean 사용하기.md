@@ -146,3 +146,47 @@ public class MessageDigestDemo {
 ```
 
 - 이와 같이 직접 MessageDigest 인스턴스를 생성하지 않고 스프링으로부터 의존성을 주입받아 사용할 수 있다.
+
+
+#### 자바 구성 클래스로 FactoryBean 구성
+
+- 자바 구성 클래스를 이용할 경우 컴파일러가 적절한 타입으로 프로퍼티를 설정하도록 제한하기 때문에 getObject() 메서드를 명시적으로 호출해야 한다.
+
+```java
+...
+
+public class MessageDigesterConfigDemo {
+	@Configuration
+	static class MessageDigesterConfig {
+
+		@Bean
+		public MessageDigestFactoryBean shaDigest() {
+			MessageDigestFactoryBean factoryOne = new MessageDigestFactoryBean();
+			factoryOne.setAlgorithmName("SHA1");
+			return factoryOne;
+		}
+
+		@Bean
+		public MessageDigestFactoryBean defaultDigest() {
+			return new MessageDigestFactoryBean();
+		}
+
+		@Bean
+		MessageDigester digester() throws Exception {
+			MessageDigester messageDigester = new MessageDigester();
+			messageDigester.setDigest1(shaDigest().getObject());
+			messageDigester.setDigest1(defaultDigest().getObject());
+			return messageDigester;
+		}
+	}
+
+	public static void main(String... args) {
+		GenericApplicationContext ctx =
+			new AnnotationConfigApplicationContext(MessageDigesterConfig.class);
+
+		MessageDigester digester = (MessageDigester) ctx.getBean("digester");
+		digester.digest("Hello World!");
+		ctx.close();
+	}
+}
+```
