@@ -123,8 +123,8 @@ public class MessageDigester {
 	<bean id="defaultDigest" class="...MessageDigestFactoryBean" />
 
 	<bean id="digester" class="...MessageDigester"
-		p: digest1-ref="shaDigest"
-		p: digest2-ref="defaultDigest" />
+		p:digest1-ref="shaDigest"
+		p:digest2-ref="defaultDigest" />
 </beans>
 ```
 

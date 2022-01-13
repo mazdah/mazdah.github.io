@@ -75,7 +75,7 @@ public class MessageDigestFactory {
 <bean...>
 
 	<bean id="shaDigestFactory" class="...MessageDigestFactory"
-		p: algorithmName="SAH1" />
+		p:algorithmName="SAH1" />
 
 	<bean id="defaultDigestFactory" class="...MessageDigestFactory" />
 
